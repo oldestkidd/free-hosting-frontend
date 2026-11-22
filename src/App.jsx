@@ -10,7 +10,7 @@ function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`${API_URL}/db-test`)
+    fetch(`${API_URL}/api/v1/projects`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to retrieve projects");
